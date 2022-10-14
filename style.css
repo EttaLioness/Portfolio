@@ -218,14 +218,23 @@ ul a:hover {
 .ProjectContainer {
   display: flex;
   flex-direction: row;
-  justify-content: space-evenly;
+  justify-content:space-around;
   align-items: center;
 }
 
 .projectImageBox,
 .projectTextBox {
-  max-width: 50%;
+  max-width: 45%;
+  min-height: 45%;
 
+}
+.projectImageBox img{
+  max-height: 100%;
+}
+
+.projectImageBox2 img {
+  max-height: 50%;
+  object-fit: contain;
 }
 
 .projectTextBox a {
@@ -346,7 +355,7 @@ ul a:hover {
   color: white;
 }
 
-/*=================TECH PAGE SECTION==============================
+/*=================TECH  SECTION==============================
  =======================================================*/
 .techSection {/*removed .projectContainer*/
   display: flex;
