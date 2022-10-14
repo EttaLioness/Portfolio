@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Nicoletta Haddad</title>
+    <link rel="icon" href="images/Low Resolution Logo - Transparent Background.png">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&family=Silkscreen&display=swap" rel="stylesheet">
+    <script src="https://kit.fontawesome.com/87cc338aec.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <nav class="topNav">
+            <a href="index.html" class="logo"><img src="images/Low Resolution Logo.png" alt="Nicoletta Haddad"></a>
+            <ul class= "nav-links">
+                <li><a href="index.html">Home</a></li>
+                <li><a href="about.html">About</a></li>
+                <li><a href="projects.html">Portfolio</a></li>
+                <li><a href="#contact-form">Contact</a></li>
+                
+            </ul>
+            <!--BURGER-->
+            <div class="hamburger">
+                <div class="line"></div>
+                <div class="line"></div>
+                <div class="line"></div>
+            </div>
+        </nav>      
+    </header>
+    <section class="icon-bar">
+        <a href="https://github.com/EttaLioness" class="github"><i class="fa fa-github"></i></a>
+        <a href="https://www.linkedin.com/in/nicoletta-h-200741226/" class="linkedin"><i class="fa fa-linkedin"></i></a>
+        <a href="#" class="twitter"><i class="fa fa-twitter"></i></a>
+       <!-- ADD EMAIL LINK-->
+    </section>
+    <main class="indexMain">
+         <img src="images/profilePic.png" alt="Image of Nicoletta Haddad">
+         <section class="mainHomeSection">
+            <span class="bubble">Hello! Nice to meet you.</span>
+           <div class="name">
+                <span class="block">I AM</span>
+                <h1 class="titleSpread" id="nicoletta">Nicoletta Haddad</h1>
+            </div>
+            <p>I am a Chiropractic Doctor turned Software Engineer currently located in Sydney Australia. I specialising in full-stack web development. I am passionate about problem-solving and learning. I love sharing my knowledge and helping people with my tech.</p>
+            <a href="#contact-form"><button type="button">Let's Talk</button></a> 
+         </section>
+    </main>
+    <section class="techSection">
+        <div><h2 class="pinkFont">My Tech Stack</h2></div>
+        <div>
+            <a href="#"><i class="fa-brands fa-html5" class="html5>"></i></a>
+            <a href="#"><i class="fa-brands fa-css3-alt" class="css3"></i></a>
+            <a href="#"><i class="fa-brands fa-square-js" class="javaScript" ></i></a>
+            <a href="#"><i class="fa-brands fa-python" class="python"></i></a>
+            <a href="#"><i class="fa-brands fa-react" class="react"></i></a>
+            <a href="#"><img src="images/icons8-django.svg" class="django" alt="Django logo"></a>
+        </div>
+    </section>
+    <!--FORM HERE-->
+    <section class="contactMe">     
+            <div id="contact-form">
+                <div>
+                    <h3 class="pinkFontbutPurple">Lets Connect!</h3>
+                </div>
+                  <p id="failure">Oopsie...message not sent.</p>  
+                  <p id="success">Your message was sent successfully. Thank you!</p>
+              
+                     <form method="post" action="https://formspree.io/f/xbjbkzyb">
+                    <div>
+                        <label for="name">
+                          <span class="required">Name: *</span> 
+                          <input type="text" id="name" name="name" value="" placeholder="Your Name" required="required" tabindex="1" autofocus="autofocus" />
+                        </label> 
+                    </div>
+                    <div>
+                        <label for="email">
+                          <span class="required">Email: *</span>
+                          <input type="email" id="email" name="email" value="" placeholder="Your Email" tabindex="2" required="required" />
+                        </label>  
+                    </div>
+                    <div>             
+                        <label for="subject">
+                        <span>Subject: </span>
+                          <select id="subject" name="subject" tabindex="4">   
+                             <option value="hello">Just to say hi.</option>
+                             <option value="quote">Let's talk business.</option>  
+                             <option value="general">Star Wars or Star Treck?</option>
+                          </select>
+                        </label>
+                    </div>
+                    <div>             
+                        <label for="message">
+                          <span class="required">Message: *</span> 
+                          <textarea id="message" name="message" placeholder="Please write your message here." tabindex="5" required="required"></textarea> 
+                        </label>  
+                    </div>
+                    <div>              
+                        <button name="submit" type="submit" id="submit" >SEND</button> 
+                    </div>
+                     </form>
+              
+                </div>
+    </section>
+    <!--FORM END HERE-->
+    <footer>
+        
+            <h5>Copyright&copy; 2022 Nicoletta Haddad ALL RIGHTS RESERVED</h5>
+
+    </footer>
+   <!--<script src="script.js"></script>-->
+</body>
+</html>

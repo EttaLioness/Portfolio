@@ -1,0 +1,597 @@
+
+*,
+*:before, 
+*:after {
+    box-sizing: border-box;
+}
+
+
+body{
+    background: #35185A;
+    margin:0%;
+    max-width: 100vw;
+    overflow: auto;
+    color:white;
+    font-family: 'Roboto', sans-serif;
+    line-height: 2rem;
+    font-weight: 400;
+}
+
+/*----------------HEADER--------------------------
+--------------------------------------------------------------*/
+.logo{
+    display: inline-block;
+}
+
+.topNav{
+    height:10vh;
+    list-style: none;
+    width: 100vw;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+ul{
+    list-style: none;
+    margin: 0;
+    padding: 0;
+  /*  overflow: hidden;*/
+    background: #35185A;
+    width: 50%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+}
+
+ul a {
+    text-decoration: none;
+    display: block;
+    text-align: center;
+    padding: 1rem;
+    color:white;
+}
+
+ ul a:hover{
+    background: hotpink;
+    transition:background-color 0.3s ease-in-out;
+ }
+
+
+ /*----------------MAIN HOME PAGE--------------------------
+--------------------------------------------------------*/
+
+.indexMain, .mainAboutPage {
+    display:flex;
+    justify-content: center;
+    align-items: center;
+    height: 90vh;
+    width: auto;
+ }
+ .indexMain img{
+    max-height: 70vh;
+ }
+
+ .indexMain h4{
+    display: inline;
+}
+
+.indexMain h1{
+    display: inline-block;
+    margin: 0%;
+}
+
+.indexMain button {
+    color: white;
+    transition: all 200ms ease-in;
+    border-radius: 10%;
+    padding: 1rem;
+    border:none;
+    background: hotpink;
+
+}
+
+.indexMain button[type="button"]:hover{
+  background-image:linear-gradient(to left,#35185A, #d648ff,pink);
+  transition:background-color 0.5s ease-in-out;
+}
+.mainHomeSection, .mainAboutSection{
+    width: 50%;
+    text-align:left;
+    padding: 6.5% 6% 3% 6%;
+    height: auto;
+}
+
+.mainHomeSection p{
+  padding: 0% 0% 2rem 0.5%;
+}
+.pinkFont{
+    font-family: 'Silkscreen', cursive;
+    color: hotpink;
+    font-size: 2rem;
+    display: inline;
+}
+.pinkFontbutPurple{
+  font-family: 'Silkscreen', cursive;
+    color: #d648ff;
+    font-size: 2rem;
+}
+.name{
+    padding: 1rem 0rem;
+}
+
+.strong{
+  display: inline;
+  color:hotpink;
+}
+/*=============================================
+====== Main ABOUT page ==============================*/
+#nicoletta{
+  font-size: 3rem;
+}
+
+.mainAboutPage img{
+  max-width: 40%;
+  max-height: 70%;
+}
+
+.mainAboutSection{
+  margin: 0%;
+}
+.mainAboutSection h4{
+  margin: 0%;
+  font-weight: 400;
+}
+
+.mainAboutSection h2{
+  margin: 0% 0% 2rem 0%;
+
+}
+
+.mainAboutSection div{
+  padding-bottom: 1rem;
+}
+
+/*=================PROJECT PAGE===================
+================================================================*/
+
+/* TITLE "PROJECT" CSS*/
+.titleSpread{
+  
+    transition: all 0.5s;
+    -webkit-text-stroke: 4px #d6f4f4;
+    font-variation-settings: "wght" 900, "ital" 1;
+    /*font-size: 6rem;*/
+    text-align: center;
+    color: transparent;
+    font-family: "Meta", sans-serif;
+    text-shadow: 10px 10px 0px #07bccc,
+      15px 15px 0px #e601c0,
+      20px 20px 0px #e9019a,
+      25px 25px 0px #f40468,
+      45px 45px 10px #482896;
+    cursor: pointer;
+  
+}
+
+.titleSpread:hover {
+  font-variation-settings: "wght" 100, "ital" 0;
+  text-shadow: none;
+}
+
+#projectIntro .titleSpread{
+  font-size: 5rem;
+}
+
+/*Image fix*/
+.projectImageBox img{
+  border-radius: 2rem;
+}
+
+.projectImageBox img:hover{
+  box-shadow: 5px 10px 18px hotpink;
+  transition: all 0.3s ease;
+  transform: scale(1.01);
+  }
+
+.ProjectContainer{
+  display: flex;
+  flex-direction: row;
+  justify-content: space-evenly;
+  align-items: center;
+}
+
+.projectImageBox, .projectTextBox{
+  max-width: 50vw;
+  
+}
+
+.projectTextBox a{
+  color: white;
+  background: none;
+  font-size: 2rem;
+  padding: 0.5rem;
+  
+}
+
+.projectTextBox{
+  padding: 2rem;
+  box-shadow: 5px 10px 18px hotpink;
+  transition: all 0.3s ease;
+  border-radius: 2rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+/*Hover over github & open link*/
+.projectTechIcons2 a:hover,
+.projectTechIcons2 a:focus{
+  transform: scale(1.15);
+}
+
+.projectTechBox{
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  
+}
+
+.projectTechIcons1 {
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-start;
+  max-width: 30%;
+}
+
+.projectTechIcons2{
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-end;
+  max-width: 30%;
+}
+
+/*.projectIntro{
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+}*/
+/*=============================================
+====== Speech bubble with a shadow ==============================*/
+
+.bubble {
+    background-color: hotpink;
+    background-image: -webkit-linear-gradient(top, hsla(0,0%,100%,.5), hsla(0,0%,100%,0));
+    background-image:    -moz-linear-gradient(top, hsla(0,0%,100%,.5), hsla(0,0%,100%,0));
+    background-image:     -ms-linear-gradient(top, hsla(0,0%,100%,.5), hsla(0,0%,100%,0));
+    background-image:      -o-linear-gradient(top, hsla(0,0%,100%,.5), hsla(0,0%,100%,0));
+    background-image:         linear-gradient(top, hsla(0,0%,100%,.5), hsla(0,0%,100%,0));
+    border-radius: 5px;
+    box-shadow: inset 0 1px 1px hsla(0,0%,100%,.5),
+                3px 3px 0 hsla(0,0%,0%,.1);
+    color:#35185A;
+    display: inline-block;
+    font: 16px/25px sans-serif;
+    padding: 15px 25px;
+    position: relative;
+    text-shadow: 0 1px 1px hsla(0,0%,100%,.5);
+    font-weight: 700;
+    text-align: left;
+}
+.bubble:after, .bubble:before{
+	content: '';
+	position: absolute;
+	left: 0;
+	top: 50%;
+	width: 0;
+	height: 0;
+	border: 20px solid transparent;
+	border-right-color: hotpink;
+	border-left: 0;
+	border-bottom: 0;
+	margin-top: -10px;
+	margin-left: -20px;
+}
+
+/*===============================================================
+ Fixed/sticky icon bar (vertically aligned 50% from the top of the screen)
+ ========================================================================= */
+.icon-bar {
+    position: fixed;
+    top: 40%;
+    -webkit-transform: translateY(-50%);
+    -ms-transform: translateY(-50%);
+    transform: translateY(-50%);
+  }
+  
+  /* Style the icon bar links */
+  .icon-bar a {
+    display: block;
+    text-align: center;
+    padding: 16px;
+    transition: all 0.3s ease;
+    color: white;
+    font-size: 20px;
+  }
+  
+  /* Style the social media icons with color, if you want */
+  .icon-bar a:hover {
+    background-color: #a437db;
+  }
+  
+  .linkedin, .github, .twitter {
+    background: hotpink;
+    color: white;
+  }
+  
+ /*=================TECH PAGE SECTION==============================
+ =======================================================*/
+ .techSection, .projectContainer{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    min-height: 50vh;
+    width: auto;
+    text-align: center;
+ }
+ .techSection div{
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    width: 70vw;
+ }
+ .techSection img{
+    width: 9rem;
+ }
+
+ .techSection i, .techSection img{
+    text-align: center;
+    padding: 16px;
+    transition: all 0.3s ease;
+    color: white;
+    font-size: 7rem;
+    margin: 0.5rem;
+  }
+ 
+  .techSection a:hover {
+    box-shadow: 5px 10px 18px #a437db;
+    transform: scale(1.21);
+  }
+
+/*=========================================================
+============CONTACT ME SECTION  ============================*/
+
+.contactMe {
+  background-image: linear-gradient( #35185A, #d648ff,pink);
+  width: 100vw;
+  height:120vh;
+  color:black;
+  font-weight: 700;
+  margin-top: 8rem;
+}
+
+#contact-form h3{
+    font-size:xx-large;
+    text-align: center;
+}
+/* Contact Form Styles */
+ #contact-form h4{
+    margin: 0 0 20px 0;
+    color:black;
+    font-family: 'Silkscreen', cursive;  
+ }
+
+ #contact-form {
+    background-color:white;
+    padding: 10px 20px 30px 20px;
+    max-width:100%;
+    float: left;
+    left: 50%;
+    position: absolute;
+    margin-top:30px;
+    margin-left: -260px;
+    border-radius:7px;
+    box-shadow: 5px 10px 18px #35185A;
+    
+ }
+ #contact-form input,   
+ #contact-form select,   
+ #contact-form textarea,   
+ #contact-form label { 
+    font-size: 15px;  
+    margin-bottom: 2px;
+    /*font-family: Arial, san-serif;*/
+ } 
+ #contact-form input,   
+ #contact-form select,   
+ #contact-form textarea { 
+    width:100%;
+   /* background: #fff;*/
+    border: 2px solid black; 
+    border-radius: 4px;
+    margin-bottom: 25px;  
+    padding: 5px;  
+ }  
+ #contact-form input:focus,   
+ #contact-form select:focus,   
+ #contact-form textarea:focus {  
+    background-color: pink; 
+ }  
+ #contact-form textarea {
+    width:100%;
+    height: 150px;
+ }
+ #contact-form button[type="submit"] {
+    cursor:pointer;
+    width:100%;
+    border:none;
+    background-image:linear-gradient(to left,#35185A, #d648ff,pink);
+    color:#FFF;
+    margin:0 0 5px;
+    padding:10px;
+    border-radius:5px;
+ }
+ #contact-form button[type="submit"]:hover {
+    background:#35185A;
+    transition:background-color 0.3s ease-in-out;
+ }
+ #contact-form button[type="submit"]:active {
+    box-shadow:inset 0 1px 3px rgba(0,0,0,0.5);
+ }
+ input:required, textarea:required {  
+    box-shadow: none; 
+ } 
+ #contact-form .required {  
+    font-weight:bold;  
+    color: black;      
+ }
+ 
+ /* Hide success/failure message
+    (especially since the php is missing) */
+ #failure, #success {
+    color: #d648ff; 
+    display:none;  
+ }
+ 
+ /* Make form look nice on smaller screens *//*removed original 580px*/
+ @media only screen and (max-width: 600px) {
+  #contact-form{
+       left: 21%;
+       margin-right: 3%;
+       width: 60%;
+       margin-left: 0;
+       padding-left: 3%;
+       padding-right: 3%;
+    }
+ }
+
+ /*---------------- FOOTER--------------------------
+--------------------------------------------------------------*/
+
+footer {
+    text-align: center;
+    width: 100vw;
+    padding: 0.5% 0%;
+}
+
+/*--------------Media Queries=============================
+========================================================*/
+
+@media only screen and (max-width: 600px){
+
+    /*====main section with words moved under cartoon image=====
+    ====================================================*/
+    .indexMain, .mainAboutPage {
+        flex-direction: column;
+        align-items: center;
+        height: auto;
+    }
+
+    .mainHomeSection, .mainAboutSection{
+        width: 80vw;
+        flex-flow: column;
+        justify-content: center;
+        margin: 0 10%;
+        display: flex;
+    }
+
+    main img{
+        width: 60vw;
+    }
+    
+
+    /*===MEDIA QUERY Change bubble arrow direction======
+    ============================================*/
+    .bubble:before {
+      content: '';
+	    position: absolute;
+	    top: 0;
+	    left: 50%;
+	    width: 0;
+	    height: 0;
+	    border: 20px solid transparent;
+	    border-bottom-color: hotpink;
+	    border-top: 0;
+	    border-right: 0;
+	    margin-left: -10px;
+	    margin-top: -20px;
+    }
+    ::after{
+        visibility: hidden;
+    }
+    /*=========Media Query BURGER MENU===========================
+
+    ======================================*/
+    .line {
+        width: 30px;
+        height: 3px;
+        background: white;
+        margin: 5px;
+      }
+      nav {
+        position: relative;
+      }
+      .hamburger {
+        position: absolute;
+        cursor: pointer;
+        right: 5%;
+        top: 50%;
+        transform: translate(-5%, -50%);
+        z-index: 2;
+      }
+      .nav-links {
+        background: pink;
+        height: auto;
+        width: 100%;
+        flex-direction: column;
+        clip-path: circle(100px at 90% -10%);
+        -webkit-clip-path: circle(100px at 90% -10%);
+        transition: all 1s ease-out;
+        pointer-events: none;
+      }
+      .nav-links.open {
+        clip-path: circle(1000px at 90% -10%);
+        -webkit-clip-path: circle(1000px at 90% -10%);
+        pointer-events: all;
+      }
+      .landing {
+        flex-direction: column;
+      }
+      .nav-links li {
+        opacity: 0;
+      }
+      .nav-links li a {
+        font-size: rem;
+      }
+      .nav-links li:nth-child(1) {
+        transition: all 0.5s ease 0.2s;
+      }
+      .nav-links li:nth-child(2) {
+        transition: all 0.5s ease 0.4s;
+      }
+      .nav-links li:nth-child(3) {
+        transition: all 0.5s ease 0.6s;
+      }
+      .nav-links li:nth-child(4) {
+        transition: all 0.5s ease 0.6s;
+      }
+      li.fade {
+        opacity: 1;
+      }
+    }
+
+    /*=========================================
+    ======Media Query 800 and below for PROJECT PAGE=====*/
+
+    @media only screen and (max-width: 800px){
+    .projectImageBox, .projectTextBox{
+  max-width: 75vw;
+    }
+  
+}}
+@media only screen and (max-width: 550px){
+  #projectIntro .titleSpread{
+    font-size: 3rem;
+
+}}
