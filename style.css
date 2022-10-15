@@ -13,10 +13,10 @@ html {
 
 
 
- * {
+ /** {
 
   border: 1px solid black;
-}
+}*/
 
 body {
   background: #35185A;
@@ -203,59 +203,62 @@ ul a:hover {
 #projectIntro .titleSpread {
   font-size: 5rem;
 }
-
+.masterProjectContainer{
+display: flex;
+flex-direction: row;
+justify-content: space-around;
+flex-wrap: wrap;
+}
 .projectContainer {
   display: flex;
-  flex-direction: row;
-  justify-content:space-around;
- /* align-items:stretch;*/
-  padding-top: 5%;
-
+  flex-direction: column;
+  justify-content:center;
+  margin-top: 5%;
+  width: 45%;
+  
 }
-.projectImageBox img:hover {
+.projectContainer:hover {
   box-shadow: 5px 10px 18px #07bccc;
   transition: all 0.3s ease;
   transform: scale(1.01);
 }
 .projectImageBox,
 .projectTextBox, .projectImageBox2 {
-  width: 45%;
-  height: 30%;
+  height: 70%;
   transition: all 0.3s ease;
-  border-radius: 2rem;
+  
 }
 
 .projectImageBox img{
   height: 100%;
   width: 100%;
-  object-fit: contain;
-  border-radius: 2rem;
+  object-fit: fill;
 }
 
 .projectImageBox2 img {
   height: 100%;
-  object-fit:contain;
-  border-radius: 2rem;
+  object-fit:fill;
   width: 100%;
 }
 
 
 .projectTextBox a {
   color: white;
-  background: none;
   font-size: 2rem;
   padding: 0.5rem;
-
+  
 }
 
 .projectTextBox {
   padding: 2rem;
-  box-shadow: 5px 10px 18px hotpink;
-  transition: all 0.3s ease;
  /* border-radius: 2rem;*/
   display: flex;
+  background: none;
   flex-direction: column;
-  justify-content: center;
+  justify-content: space-between;
+  color:#35185A;
+  font-size: 1.2rem;
+  background-image: radial-gradient(pink, #d648ff,#35185A );
 }
 /**Project Tech Boxes are good================
 =========================================*/
@@ -286,7 +289,10 @@ ul a:hover {
   justify-content: flex-end;
   max-width: 30%;
 }
-
+/*had to overide css for github fix social link*/
+.projectTechIcons2 .github{
+background: none;
+}
 
 /*=============================================
 ====== Speech bubble with a shadow ==============================*/
@@ -689,5 +695,22 @@ footer {
   #projectIntro .titleSpread {
     font-size: 3rem;
 
+  }
+}
+
+@media only screen and (max-width: 860px) {
+  .projectContainer{
+    width: 70%;
+  }
+
+  .projectTextBox {
+    font-size: 1rem;
+  }
+  .projectImageBox2 img {
+    height: 100%;
+    object-fit:fill;
+    width: 100%;
+    display: flex;
+    align-self:stretch;
   }
 }
