@@ -65,9 +65,10 @@ ul a {
 }
 
 ul a:hover {
-  background: #e601c0;
+  background: #07bccc;
   transition: background-color 0.3s ease-in-out;
 }
+
 
 
 /*----------------MAIN HOME PAGE--------------------------
@@ -110,8 +111,7 @@ ul a:hover {
   transition: background-color 0.5s ease-in-out;
 }
 
-.mainHomeSection,
-.mainAboutSection {
+.mainHomeSection {
   width: 50%;
   text-align: left;
   padding: 6.5% 6% 3% 6%;
@@ -156,7 +156,11 @@ ul a:hover {
 }
 
 .mainAboutSection {
+  width: 50%;
+  text-align: left;
+  height: auto;
   margin: 0%;
+  padding: 0% 0% 0% 2%;
 }
 
 .mainAboutSection h4 {
@@ -214,7 +218,7 @@ flex-wrap: wrap;
   flex-direction: column;
   justify-content:center;
   margin-top: 5%;
-  width: 45%;
+  width: 40%;
   
 }
 .projectContainer:hover {
@@ -273,6 +277,7 @@ flex-wrap: wrap;
   display: flex;
   flex-direction: row;
   justify-content: space-between;
+  flex-wrap: wrap;
 
 }
 
@@ -400,8 +405,12 @@ background: none;
 }
 
 .techSection a:hover {
-  box-shadow: 5px 10px 18px #a437db;
+  box-shadow: 5px 10px 18px #07bccc;
   transform: scale(1.21);
+}
+
+.titleSpread#myTeckStack{
+  font-size: 3rem;
 }
 
 /*=========================================================
@@ -549,15 +558,13 @@ footer {
 
   /*====main section with words moved under cartoon image=====
     ====================================================*/
-  .indexMain,
-  .mainAboutPage {
+  .indexMain{
     flex-direction: column;
     align-items: center;
     height: auto;
   }
 
-  .mainHomeSection,
-  .mainAboutSection {
+  .mainHomeSection {
     width: 80vw;
     flex-flow: column;
     justify-content: center;
@@ -674,19 +681,45 @@ footer {
 
 @media only screen and (max-width: 800px) {
 
-  .projectImageBox,
+  .mainAboutPage {
+    flex-direction: column;
+    align-items: center;
+    height: auto;
+  }
+  .mainAboutSection {
+    width: 80vw;
+    flex-flow: column;
+    justify-content: center;
+    margin: 0 10%;
+    display: flex;
+  }
+
+  /*.projectImageBox,
   .projectTextBox {
     max-width: 85%;
-  }
+  }*/
 
   .projectContainer{
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    min-height: 50vh;
-    width: auto;
+    /*min-height: 50vh;
+    width: auto;*/
     text-align: center;
+    width: 70%;
+  } 
+  
+  .projectTextBox {
+    font-size: 1.2rem;
+  }
+
+  .projectImageBox2 img {
+    height: 100%;
+    object-fit:fill;
+    width: 100%;
+    display: flex;
+    align-self:stretch;
   }
 }
 
@@ -698,19 +731,17 @@ footer {
   }
 }
 
-@media only screen and (max-width: 860px) {
-  .projectContainer{
-    width: 70%;
-  }
 
-  .projectTextBox {
-    font-size: 1rem;
-  }
-  .projectImageBox2 img {
-    height: 100%;
-    object-fit:fill;
-    width: 100%;
+/*Fixing tech & social media icons base 
+of project card*/
+@media only screen and (max-width: 470px) {
+  .projectTechBox{
     display: flex;
-    align-self:stretch;
+    flex-direction: column;
+    justify-content: center;
+    align-content: center;
   }
-}
+    .projectTechIcons1, .projectTechIcons2{
+      align-self: center;
+    }
+  }
