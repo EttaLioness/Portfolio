@@ -694,18 +694,10 @@ footer {
     display: flex;
   }
 
-  /*.projectImageBox,
-  .projectTextBox {
-    max-width: 85%;
-  }*/
-
   .projectContainer{
     display: flex;
     flex-direction: column;
     justify-content: center;
-    align-items: center;
-    /*min-height: 50vh;
-    width: auto;*/
     text-align: center;
     width: 70%;
   } 
@@ -714,13 +706,6 @@ footer {
     font-size: 1.2rem;
   }
 
-  .projectImageBox2 img {
-    height: 100%;
-    object-fit:fill;
-    width: 100%;
-    display: flex;
-    align-self:stretch;
-  }
 }
 
 
@@ -737,11 +722,12 @@ of project card*/
 @media only screen and (max-width: 470px) {
   .projectTechBox{
     display: flex;
-    flex-direction: column;
+    flex-direction: row;
     justify-content: center;
     align-content: center;
   }
     .projectTechIcons1, .projectTechIcons2{
-      align-self: center;
+      max-width: none;
+      align-content: center;
     }
   }
