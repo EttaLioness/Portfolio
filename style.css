@@ -69,6 +69,9 @@ ul a:hover {
   transition: background-color 0.3s ease-in-out;
 }
 
+.topNav img{
+  margin-top: 1rem;
+}
 
 
 /*----------------MAIN HOME PAGE--------------------------
